@@ -120,6 +120,16 @@ Represents payment transactions made for bookings.
 
 ---
 
+## Feature Breakdown
+
+The Airbnb Clone Project will implement several key features that replicate the core functionality of the Airbnb platform. Each feature plays a crucial role in creating a complete and user-friendly application.
+
+### 1. User Management
+Enables users to register, log in, and manage their profiles. This feature includes role management (guest, host, admin) and secure authentication, ensuring that only authorized users can access specific parts of the system.
+
+### 2. Property Management
+Allows hosts to create, update, and delete property listings. Each property includes details such as location, price, descript
+
 ### 🔗 Relationships
 - A **User** can be a **Host** (owning multiple properties) or a **Guest** (making multiple bookings).  
 - A **Property** belongs to a **Host** and can have multiple **Bookings** and **Reviews**.  
