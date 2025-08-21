@@ -67,3 +67,62 @@ A containerization platform used to package the application and its dependencies
 
 ### 8. CI/CD Tools (e.g., GitHub Actions)  
 Used to automate testing, integration, and deployment so that new changes can be released faster and with fewer errors.  
+## Database Design
+
+The database for the Airbnb Clone project will store and manage all critical information related to users, properties, bookings, reviews, and payments. Below are the key entities and their fields:
+
+### 1. Users
+Represents the people using the platform, either as guests or hosts.  
+**Fields:**
+- `user_id` (Primary Key)  
+- `name`  
+- `email`  
+- `password_hash`  
+- `role` (guest, host, admin)  
+
+### 2. Properties
+Represents the listings added by hosts.  
+**Fields:**
+- `property_id` (Primary Key)  
+- `host_id` (Foreign Key → Users)  
+- `title`  
+- `description`  
+- `location`  
+- `price_per_night`  
+
+### 3. Bookings
+Represents reservations made by guests.  
+**Fields:**
+- `booking_id` (Primary Key)  
+- `user_id` (Foreign Key → Users)  
+- `property_id` (Foreign Key → Properties)  
+- `check_in_date`  
+- `check_out_date`  
+- `status` (confirmed, cancelled, completed)  
+
+### 4. Reviews
+Represents feedback left by guests for properties.  
+**Fields:**
+- `review_id` (Primary Key)  
+- `user_id` (Foreign Key → Users)  
+- `property_id` (Foreign Key → Properties)  
+- `rating` (1–5)  
+- `comment`  
+
+### 5. Payments
+Represents payment transactions made for bookings.  
+**Fields:**
+- `payment_id` (Primary Key)  
+- `booking_id` (Foreign Key → Bookings)  
+- `amount`  
+- `payment_date`  
+- `status` (paid, pending, failed)  
+
+---
+
+### 🔗 Relationships
+- A **User** can be a **Host** (owning multiple properties) or a **Guest** (making multiple bookings).  
+- A **Property** belongs to a **Host** and can have multiple **Bookings** and **Reviews**.  
+- A **Booking** belongs to a **User** and a **Property**, and it generates a **Payment**.  
+- A **Review** is created by a **User** for a specific **Property** after a booking.  
+- A **Payment** is linked to a single **Booking**.  
