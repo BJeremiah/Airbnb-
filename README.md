@@ -38,3 +38,32 @@ Designs the look and feel of the platform. Creates wireframes, mockups, and ensu
 
 ### 7. DevOps Engineer  
 Handles deployment, continuous integration/continuous delivery (CI/CD), server setup, and ensures the app runs smoothly in production.  
+## Technology Stack
+
+### 1. Django  
+A high-level Python web framework used for building robust and scalable web applications. In this project, Django provides the server-side logic and manages the connection between frontend, backend, and database.
+
+### 2. PostgreSQL  
+An advanced open-source relational database system. PostgreSQL stores and manages all project data such as user accounts, listings, bookings, and reviews.
+
+### 3. GraphQL  
+A query language and runtime for APIs. It allows the frontend to request exactly the data it needs from the backend, making data fetching more efficient compared to traditional REST APIs.
+
+### 4. HTML, CSS, and JavaScript  
+The core building blocks for the frontend of the application.  
+- **HTML**: Structures the web pages.  
+- **CSS**: Styles the web pages for a clean and responsive design.  
+- **JavaScript**: Adds interactivity and dynamic features.  
+
+### 5. React (Optional Enhancement)  
+A popular JavaScript library for building user interfaces. React could be used to create reusable components and a smoother, faster user experience.
+
+### 6. Git & GitHub  
+- **Git**: Version control system used to track changes in code.  
+- **GitHub**: A platform for hosting the repository, enabling collaboration and code sharing.  
+
+### 7. Docker (Optional Enhancement)  
+A containerization platform used to package the application and its dependencies, ensuring consistent environments during development and deployment.  
+
+### 8. CI/CD Tools (e.g., GitHub Actions)  
+Used to automate testing, integration, and deployment so that new changes can be released faster and with fewer errors.  
