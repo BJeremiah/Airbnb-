@@ -136,21 +136,7 @@ Allows hosts to create, update, and delete property listings. Each property incl
 - A **Booking** belongs to a **User** and a **Property**, and it generates a **Payment**.  
 - A **Review** is created by a **User** for a specific **Property** after a booking.  
 - A **Payment** is linked to a single **Booking**.  
-## API Security
 
-To ensure the Airbnb Clone Project is safe, reliable, and trustworthy, several key security measures will be implemented. Security is critical for protecting user data, transactions, and the integrity of the platform.
-
-### 1. Authentication
-**Description:** Verifies the identity of users before granting access to the system, typically through secure login mechanisms (e.g., JWT, OAuth).  
-**Why it’s important:** Prevents unauthorized users from accessing sensitive information such as accounts, bookings, and payments.
-
-### 2. Authorization
-**Description:** Determines what resources a user can access based on their role (e.g., guest, host, admin).  
-**Why it’s important:** Ensures that users can only perform actions permitted to their role (e.g., only hosts can create properties, only admins can manage the platform).
-
-### 3. Data Encryption
-**Description:** Uses encryption (e.g., HTTPS/TLS, hashing passwords with bcrypt) to secure sensitive data in transit and at rest.  
-**Why it’s important:** Protects user credentials, payment details, and personal information
 ## API Security
 
 To ensure the Airbnb Clone Project is safe, reliable, and trustworthy, several key security measures will be implemented. Security is critical for protecting user data, transactions, and the integrity of the platform.
