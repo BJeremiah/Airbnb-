@@ -141,3 +141,34 @@ To ensure the Airbnb Clone Project is safe, reliable, and trustworthy, several k
 ### 3. Data Encryption
 **Description:** Uses encryption (e.g., HTTPS/TLS, hashing passwords with bcrypt) to secure sensitive data in transit and at rest.  
 **Why it’s important:** Protects user credentials, payment details, and personal information
+## API Security
+
+To ensure the Airbnb Clone Project is safe, reliable, and trustworthy, several key security measures will be implemented. Security is critical for protecting user data, transactions, and the integrity of the platform.
+
+### 1. Authentication
+**Description:** Verifies the identity of users before granting access to the system, typically through secure login mechanisms (e.g., JWT, OAuth).  
+**Why it’s important:** Prevents unauthorized users from accessing sensitive information such as accounts, bookings, and payments.
+
+### 2. Authorization
+**Description:** Determines what resources a user can access based on their role (e.g., guest, host, admin).  
+**Why it’s important:** Ensures that users can only perform actions permitted to their role (e.g., only hosts can create properties, only admins can manage the platform).
+
+### 3. Data Encryption
+**Description:** Uses encryption (e.g., HTTPS/TLS, hashing passwords with bcrypt) to secure sensitive data in transit and at rest.  
+**Why it’s important:** Protects user credentials, payment details, and personal information from being stolen during communication or database breaches.
+
+### 4. Rate Limiting & Throttling
+**Description:** Limits the number of requests a client can make to the API in a given time frame.  
+**Why it’s important:** Prevents abuse, brute-force login attempts, and denial-of-service (DoS) attacks.
+
+### 5. Input Validation & Sanitization
+**Description:** Ensures that all input (e.g., form data, search queries) is properly validated and sanitized.  
+**Why it’s important:** Prevents common attacks such as SQL injection, cross-site scripting (XSS), and other injection flaws.
+
+### 6. Secure Payments
+**Description:** Integrates trusted payment gateways with strong security standards (e.g., PCI-DSS compliance).  
+**Why it’s important:** Protects users’ financial information and prevents fraudulent transactions.
+
+### 7. Logging & Monitoring
+**Description:** Keeps track of API requests and suspicious activities for auditing and quick response.  
+**Why it’s important:** Helps detect security breaches early and maintain accountability.  
