@@ -189,4 +189,4 @@ It is a set of practices that automate the process of testing, integrating, and 
 - **Pytest / Jest (Testing tools):** Ensures backend and frontend code is tested before deployment.  
 
 ### Summary
-Implementing a CI/CD pipeline in this project guarantees that every change goes through an automated process of **building → testing → deploying**, resulting in a more secure, stable, and professional product.  
+Implementing a CI/CD pipeline in this project guarantees that every change goes through an automated process of **building → testing → deploying**, resulting in a more secure, stable, and professional product.  n
